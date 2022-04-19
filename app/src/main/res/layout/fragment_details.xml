@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/iv_fundo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_imv_details"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/androidx_startup"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/top_linear_details"
+        android:background="@drawable/bg_curvado_white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_price"
+            android:layout_width="@dimen/size_items_details"
+            android:layout_height="@dimen/size_items_details"
+            android:layout_marginStart="@dimen/start_items_details"
+            android:layout_marginTop="@dimen/top_items_details"
+            android:src="@drawable/ic_price"
+
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            style="@style/Sicredi.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/start_text_details"
+
+            app:layout_constraintStart_toEndOf="@id/iv_price"
+            app:layout_constraintTop_toTopOf="@id/iv_price"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_calendar"
+            style="@style/Sicredi.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/start_text_details"
+            android:layout_marginEnd="@dimen/end_text_details"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_price" />
+
+        <ImageView
+            android:layout_width="@dimen/size_items_details"
+            android:layout_height="@dimen/size_items_details"
+            android:layout_marginEnd="@dimen/end_text_details"
+
+
+            android:src="@drawable/ic_calendar"
+            app:layout_constraintEnd_toStartOf="@+id/tv_calendar"
+            app:layout_constraintTop_toTopOf="@id/tv_calendar" />
+
+        <TextView
+            android:id="@+id/tv_label_desc"
+            style="@style/Sicredi.Text.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/start_items_details"
+            android:layout_marginTop="@dimen/top_items_details"
+            android:text="@string/label_desc"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_price"
+
+
+            />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_marginStart="@dimen/end_text_details"
+            android:layout_marginTop="@dimen/top_items_details"
+            android:layout_marginEnd="@dimen/end_text_details"
+
+
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_desc">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    style="@style/Sicredi.Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/size_circle_btn_details"
+        android:id="@+id/bt_share"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="@dimen/end_text_details"
+        android:layout_marginBottom="@dimen/bottom_second_circle_btn_details"
+        android:elevation="@dimen/elevation_circle_btn_details"
+        android:background="@drawable/bg_circle_button_green"
+        android:layout_height="@dimen/size_circle_btn_details"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <ImageView
+            android:layout_width="@dimen/size_items_details"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_share"
+            android:layout_centerHorizontal="true"
+            android:layout_height="@dimen/size_items_details"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/size_circle_btn_details"
+        android:id="@+id/bt_check"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="@dimen/end_text_details"
+        android:layout_marginBottom="@dimen/bottom_first_circle_btn_details"
+        android:elevation="@dimen/elevation_circle_btn_details"
+        android:background="@drawable/bg_circle_button_green"
+        android:layout_height="@dimen/size_circle_btn_details"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:layout_width="@dimen/size_items_details"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_check"
+            android:layout_centerHorizontal="true"
+            android:layout_height="@dimen/size_items_details"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

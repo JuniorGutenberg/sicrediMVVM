@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">SicrediMVVM</string>
+    <string name="nome_main">Sicredi Eventos</string>
+    <string name="label_desc">Descrição: </string>
+
+    <!-- Strings Splash  -->
+    <string name="processo">Processo Seletivo  </string>
+    <string name="desenvolvido"><b> Desenvolvido por: </b>Aleksiam Gutenberg  </string>
+
+
+    <!-- Strings Custom Dialog  -->
+    <string name="title_custom">Informe seus dados: </string>
+    <string name="hint_nome">Informe seu nome: </string>
+    <string name="check_in">Check-in </string>
+    <string name="hint_email">Informe seu email: </string>
+    <string name="btn_checkin">Check-in </string>
+
+
+    <!-- Strings Compartilhar  -->
+    <string name="title_share">Venha Conhecer! </string>
+    <string name="dia_share">No dia:  </string>
+    <string name="price_share">Por apenas:  </string>
+    <string name="final_share">Não vai ficar de fora !!!  </string>
+
+
+    <!-- Strings Detalhes  -->
+    <string name="error_email">Informe Um E-mail válido </string>
+    <string name="error_nome">Informe um nome válido</string>
+    <string name="error_connection">Sem internet </string>
+    <string name="check_sucess">Check-in Realizado com Sucesso!!</string>
+    <string name="check_error">Infelizmente aconteceu algum erro :(</string>
+
+
+
+
+</resources>

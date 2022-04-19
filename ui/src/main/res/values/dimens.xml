@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Details Main  -->
+    <dimen name="height_imv_details">220dp</dimen>
+    <dimen name="top_linear_details">180dp</dimen>
+    <dimen name="elevation_linear_details">2dp</dimen>
+    <dimen name="start_items_details">25dp</dimen>
+    <dimen name="top_items_details">20dp</dimen>
+    <dimen name="title_main">60dp</dimen>
+    <dimen name="top_main">120dp</dimen>
+    <dimen name="size_items_details">30dp</dimen>
+    <dimen name="text_size_items_details">20sp</dimen>
+    <dimen name="start_text_details">10dp</dimen>
+    <dimen name="end_text_details">15dp</dimen>
+    <dimen name="text_size_desc_details">18sp</dimen>
+    <dimen name="size_circle_btn_details">65dp</dimen>
+    <dimen name="elevation_circle_btn_details">5dp</dimen>
+    <dimen name="bottom_first_circle_btn_details">80dp</dimen>
+    <dimen name="bottom_second_circle_btn_details">160dp</dimen>
+
+    <!-- Main  -->
+    <dimen name="text_size_title_main">24sp</dimen>
+
+
+    <!-- Loading  -->
+    <dimen name="size_item_loading">48dp</dimen>
+</resources>

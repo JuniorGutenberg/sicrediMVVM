@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Sicredi.Text" parent="TextAppearance.AppCompat.Body1">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor"> @color/black</item>
+        <item name="android:textSize">@dimen/text_size_items_details</item>
+    </style>
+    <style name="Sicredi.Text.Label" parent="TextAppearance.AppCompat.Body1">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor"> @color/black</item>
+        <item name="android:textSize">@dimen/text_size_items_details</item>
+    </style>
+</resources>

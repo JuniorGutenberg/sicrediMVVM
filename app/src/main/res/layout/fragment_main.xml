@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_degrade_fundo"
+        android:layout_height="@dimen/height_imv_details"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/nome_main"
+        android:layout_marginTop="@dimen/title_main"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_marginStart="@dimen/start_items_details"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_title_main"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/top_main"
+        android:orientation="vertical"
+        android:background="@drawable/bg_curvado_white"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_events"
+            android:layout_marginTop="@dimen/top_items_details"
+            android:layout_marginStart="@dimen/start_text_details"
+            android:layout_marginEnd="@dimen/start_text_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

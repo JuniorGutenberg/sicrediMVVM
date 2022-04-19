@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginStart="@dimen/end_text_details"
+    android:layout_marginEnd="@dimen/end_text_details"
+    android:layout_marginBottom="@dimen/start_text_details"
+    android:layout_marginTop="@dimen/start_text_details"
+    android:background="@drawable/bg_card_events"
+    android:elevation="@dimen/elevation_circle_btn_details"
+    android:layout_height="@dimen/height_imv_details">
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+
+       android:layout_gravity="bottom"
+       android:background="@drawable/bg_bottom_card_events"
+       android:layout_height="@dimen/size_circle_btn_details">
+       <TextView
+           android:id="@+id/tv"
+           android:layout_width="wrap_content"
+           android:maxLines="1"
+           android:textColor="@color/white"
+           android:textSize="@dimen/text_size_items_details"
+           android:fontFamily="@font/roboto_regular"
+           android:layout_marginTop="@dimen/elevation_circle_btn_details"
+           android:layout_marginStart="@dimen/end_text_details"
+           android:layout_marginEnd="@dimen/end_text_details"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:ellipsize="end"
+           android:layout_height="wrap_content"/>
+   </LinearLayout>
+</FrameLayout>
