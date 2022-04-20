@@ -16,6 +16,7 @@ class DetailsViewModel(private val detailsRepository: CheckInRepository):ViewMod
         viewModelScope.launch {
             val result = detailsRepository.checkIn(eventId,name, email)
             resultLiveData.value = result
+
         }
     }
 }
